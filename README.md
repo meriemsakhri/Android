@@ -13,7 +13,19 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 - `.gitignore` → Exclut les fichiers inutiles (build, caches, etc.)
 ---
 
-### 🧩 TP3 – Jeu du Nombre Secret et Types de Layout (07 & 14 octobre 2025)
+###  TP1 – Préparation Environnement de développement(23 septembre)
+- Installation et configuration de l'environnement de développement Android(JDK,Android Studio,SDK,API).
+- Se familiariser avec l'interface de base d'Android Studio.
+- Creation et éxecution d'un premier projet "Hello World" sur un AVD ou un appareil physique.
+
+
+###  TP2 – Interfaces d’authentification(30 septembre)
+- Dans ce TP, nous avons créé deux activités principales :
+  - **LoginActivity : permet à l’utilisateur de saisir son email et mot de passe pour se connecter.**
+  - **RegisterActivity : permet l’inscription d’un nouvel utilisateur avec les champs Nom & Prénom, Email, Mot de passe et Confirmation du mot de passe.**
+- Les interfaces ont été réalisées avec des layouts simples (LinearLayout) et des éléments de base comme TextView, EditText, Button et ImageView.
+
+###  TP3 – Jeu du Nombre Secret et Types de Layout (07 & 14 octobre 2025)
 - Découverte et utilisation des principaux types de Layout :
     - **LinearLayout**
     - **RelativeLayout**
@@ -28,7 +40,7 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 
   *Le jeu a été amélioré par rapport à la version initiale du layout.*
 
-### 🔁 TP4 – Cycle de Vie d’une Activité (14 octobre 2025)
+###  TP4 – Cycle de Vie d’une Activité (14 octobre 2025)
 - Création de `LiveCycleActivity`.
 - Ajout de logs (`Log.e`) dans chaque méthode du cycle de vie :
     - `onCreate`, `onStart`, `onResume`, `onPause`, `onStop`, `onDestroy`.

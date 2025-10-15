@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TP3">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".JeuActivity"
             android:exported="false" />
         <activity
@@ -24,10 +30,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:name=".AboutActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
