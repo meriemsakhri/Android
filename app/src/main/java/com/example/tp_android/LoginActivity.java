@@ -1,17 +1,15 @@
-package com.example.tp3;
+package com.example.tp_android;
 
 import android.os.Bundle;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
-
-public class AboutActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.login_activity);
 
     }
 }
