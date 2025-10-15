@@ -9,7 +9,7 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 
 ## 🧩 Structure du projet
 - `app/src/main/res/layout/` → Contient les fichiers XML (interfaces utilisateur)
-- `app/src/main/java/com/example/tp3/` → Contient le code Java (logique)
+- `app/src/main/java/com/example/tp_android/` → Contient le code Java (logique)
 - `.gitignore` → Exclut les fichiers inutiles (build, caches, etc.)
 ---
 
