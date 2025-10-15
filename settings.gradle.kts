@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TP 3"
+rootProject.name = "TP_Android"
 include(":app")
