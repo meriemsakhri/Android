@@ -46,6 +46,27 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
     - `onCreate`, `onStart`, `onResume`, `onPause`, `onStop`, `onDestroy`.
 - Permet d’observer et comprendre le comportement d’une activité Android.
 
+### TP4 – Suite : Cycle de Vie d'une Activité (21 octobre 2025)
+
+#### **Activité 1 : Comprendre le Cycle de Vie**
+- Implémentation complète des méthodes du cycle de vie
+- Création d'un compteur incrémentable avec interface
+- Utilisation de logs pour observer les transitions d'état
+
+#### **Activité 2 : Sauvegarde d'État lors de la Rotation**
+- Résolution du problème de perte de données lors des rotations
+- Implémentation de onSaveInstanceState() et restauration dans onCreate()
+- Sauvegarde du compteur avec système de Bundle
+
+#### **Activité 3 : Création de Layout Paysage**
+- Création du qualifier layout-land pour l'orientation paysage
+- Adaptation de l'interface en mode horizontal
+- Utilisation de layout_weight pour une répartition optimale
+
+#### **Activité 4 : Application au Jeu du Nombre Secret**
+- Application des principes de sauvegarde d'état au jeu existant
+- Préservation du nombre d'essais et du nombre mystère
+- Création d'un layout paysage spécifique pour le jeu
 ---
 ## 👨‍💻 Auteur
 - **Nom :** Meriem Sakhri
@@ -54,7 +75,7 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 ---
 
 ## 🗂️ Version
-Dernière mise à jour le *15 octobre 2025*
+Dernière mise à jour le *21 octobre 2025*
 
 ---
 
