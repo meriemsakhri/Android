@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nom & Prénom -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom et Prénom"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edit_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez votre nom complet"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Numéro de téléphone -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Numéro de téléphone"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edit_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrez votre numéro de téléphone"
+            android:inputType="phone"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Parcours demandé (RadioGroup) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parcours demandé"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_parcours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/radio_parcours_gl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GL" />
+
+            <RadioButton
+                android:id="@+id/radio_parcours_ia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IA" />
+
+            <RadioButton
+                android:id="@+id/radio_parcours_iot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IOT" />
+
+            <RadioButton
+                android:id="@+id/radio_parcours_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DS" />
+        </RadioGroup>
+
+        <!-- Options (CheckBox) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Options - Rejoindre les clubs"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_club1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rejoindre le club 1" />
+
+            <CheckBox
+                android:id="@+id/checkbox_club2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rejoindre le club 2" />
+
+            <CheckBox
+                android:id="@+id/checkbox_club3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rejoindre le club 3" />
+        </LinearLayout>
+
+        <!-- Bouton de validation -->
+        <Button
+            android:id="@+id/btn_valider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VALIDER"
+            android:textSize="18sp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
