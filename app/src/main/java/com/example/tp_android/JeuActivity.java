@@ -10,17 +10,17 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Random;
 
-// Déclaration de l’activité principale du jeu
 public class JeuActivity extends AppCompatActivity {
     private int nbr_essai = 1;
     private static final int MAX_ESSAI = 10;
+    private static final String KEY_NBR_ESSAI = "nbr_essai";
+    private static final String KEY_NOMBRE_MYSTERE = "nombre_mystere";
 
-    // Déclaration des variables pour les éléments graphiques
-    private Button btnValider;       // Bouton pour valider la saisie
-    private EditText Edt_nbr_user;   // Champ de saisie du nombre par l’utilisateur
-    private TextView txtNbrEssai;    // Affiche le nombre de tentatives
-    private TextView txtInfo;        // Affiche les messages d'erreur ou succès
-    private int nombreMystere;       // The random number to guess
+    private Button btnValider;
+    private EditText Edt_nbr_user;
+    private TextView txtNbrEssai;
+    private TextView txtInfo;
+    private int nombreMystere;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,23 +31,31 @@ public class JeuActivity extends AppCompatActivity {
         Edt_nbr_user = findViewById(R.id.Edt_nombre_user);
         btnValider = findViewById(R.id.Btn_valider);
         txtNbrEssai = findViewById(R.id.Txt_nbr_essai);
-        txtInfo = findViewById(R.id.Txt_info); // NEW
+        txtInfo = findViewById(R.id.Txt_info);
 
-        // Générer le nombre aléatoire
-        Random rand = new Random();
-        nombreMystere = rand.nextInt(900) + 100; // 100..999
-        Log.d("Jeu", "Nombre mystère (for testing) = " + nombreMystere);
-        // Initialiser le texte de la tentative
-        // txtNbrEssai.setText("Tentative " + nbr_essai + "/" + MAX_ESSAI);
+        // RESTAURATION de l'état (NOUVEAU CODE)
+        if (savedInstanceState != null) {
+            nbr_essai = savedInstanceState.getInt(KEY_NBR_ESSAI, 1);
+            nombreMystere = savedInstanceState.getInt(KEY_NOMBRE_MYSTERE);
+            Log.i("JeuActivity", "Restauration: essai=" + nbr_essai + ", nombre=" + nombreMystere);
+        } else {
+            // Générer un nouveau nombre seulement si pas de sauvegarde
+            Random rand = new Random();
+            nombreMystere = rand.nextInt(900) + 100;
+        }
 
-        // Définition de l’action lors du clic sur le bouton "VERIFIER"
+        Log.d("Jeu", "Nombre mystère = " + nombreMystere);
+
+        // Mettre à jour l'affichage du nombre d'essais
+        txtNbrEssai.setText("Tentative " + nbr_essai + "/" + MAX_ESSAI);
+
         btnValider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String nbr = Edt_nbr_user.getText().toString();
 
                 if (nbr.length() == 0) {
-                    txtInfo.setText("Vous devez saisir un nombre"); // show message
+                    txtInfo.setText("Vous devez saisir un nombre");
                 } else {
                     if (nbr_essai <= MAX_ESSAI) {
                         int nbr_saisi = Integer.parseInt(nbr);
@@ -57,13 +65,13 @@ public class JeuActivity extends AppCompatActivity {
                         } else {
                             if (nbr_saisi == nombreMystere) {
                                 txtInfo.setText("Bravo! Vous avez deviné le nombre!");
-                                btnValider.setEnabled(false); // Stop further attempts
+                                btnValider.setEnabled(false);
                             } else {
                                 nbr_essai++;
                                 txtNbrEssai.setText("Tentative " + nbr_essai + "/" + MAX_ESSAI);
 
                                 if (nbr_essai > MAX_ESSAI) {
-                                    txtNbrEssai.setText("Échec, vous avez atteint la limite de tentative. Le nombre était " + nombreMystere);
+                                    txtInfo.setText("Échec, limite atteinte. Le nombre était " + nombreMystere);
                                     btnValider.setEnabled(false);
                                 } else {
                                     txtInfo.setText("Nombre incorrect, essayez encore.");
@@ -74,5 +82,14 @@ public class JeuActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    // SAUVEGARDE de l'état (NOUVELLE MÉTHODE)
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(KEY_NBR_ESSAI, nbr_essai);
+        outState.putInt(KEY_NOMBRE_MYSTERE, nombreMystere);
+        Log.i("JeuActivity", "Sauvegarde: essai=" + nbr_essai + ", nombre=" + nombreMystere);
     }
 }
