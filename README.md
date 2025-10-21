@@ -68,6 +68,11 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 - Préservation du nombre d'essais et du nombre mystère
 - Création d'un layout paysage spécifique pour le jeu
 ---
+### TP5 – Widgets et Alertes - Partie 1 (21 octobre)
+- Création de RegistrationActivity avec formulaire de parcours étudiant
+- Utilisation de RadioGroup (GL, IA, IOT, DS), CheckBox (clubs) et ScrollView
+- Interface complète avec validation des données
+
 ## 👨‍💻 Auteur
 - **Nom :** Meriem Sakhri
 - **Filière :** 4 CS - Ecole Polytechnique de Sousse
