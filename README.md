@@ -96,7 +96,7 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 ---
 
 ## 🗂️ Version
-Dernière mise à jour le *21 octobre 2025*
+Dernière mise à jour le *28 octobre 2025*
 
 ---
 
