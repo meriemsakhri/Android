@@ -73,6 +73,22 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 - Utilisation de RadioGroup (GL, IA, IOT, DS), CheckBox (clubs) et ScrollView
 - Interface complète avec validation des données
 
+### TP5 – Widgets et Alertes - Partie 2 & 3 (Suite - 28 octobre)
+- **Récupération et validation des données** depuis tous les widgets
+- **EditText** : Validation nom et téléphone avec `setError()`
+- **RadioGroup** : Gestion des parcours avec sélection exclusive
+- **CheckBox** : Récupération multiple des clubs sélectionnés
+- **AlertDialog** : Affichage professionnel des données validées
+- **Gestion d'erreurs** : Toast et messages d'erreur contextuels
+- **Validation complète** avec messages d'erreur appropriés
+
+**Fonctionnalités implémentées :**
+- ✅ Interface utilisateur complète avec ScrollView
+- ✅ Validation en temps réel des champs obligatoires
+- ✅ Récupération des données depuis tous les types de widgets
+- ✅ Affichage des résultats via AlertDialog professionnel
+- ✅ Gestion des erreurs avec Toast et setError()
+
 ## 👨‍💻 Auteur
 - **Nom :** Meriem Sakhri
 - **Filière :** 4 CS - Ecole Polytechnique de Sousse
