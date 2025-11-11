@@ -89,6 +89,34 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 - ✅ Affichage des résultats via AlertDialog professionnel
 - ✅ Gestion des erreurs avec Toast et setError()
 
+### TP6 – Utilisation des ListView (11 Novembre 2025)
+
+#### **Partie 1 : ListView avec Layout par Défaut**
+- Création de `DefaultListviewActivity`
+- Utilisation d'ArrayAdapter avec layout système `simple_list_item_1`
+- Affichage d'une liste de villes tunisiennes
+- Gestion des clics avec `OnItemClickListener`
+- Affichage des éléments sélectionnés via Toast
+
+#### **Partie 2 : ListView Personnalisée**
+- Création de `ListViewPersonnaliseActivity`
+- Conception d'un layout personnalisé `item_logiciel.xml` avec :
+  - ImageView pour les icônes
+  - TextView pour le nom du logiciel
+  - TextView pour la description
+- Utilisation de `SimpleAdapter` avec `HashMap` pour les données complexes
+- Intégration d'icônes pour différents logiciels (Word, Excel, WinRAR, etc.)
+- Gestion avancée des images via `setViewImage()`
+
+**Concepts maîtrisés :**
+- ✅ Adapters (ArrayAdapter, SimpleAdapter)
+- ✅ ListView avec layouts par défaut et personnalisés
+- ✅ Gestion de données complexes avec HashMap
+- ✅ Intégration d'images dans les listes
+- ✅ Interactions utilisateur avec les éléments de liste
+
+---
+
 ## 👨‍💻 Auteur
 - **Nom :** Meriem Sakhri
 - **Filière :** 4 CS - Ecole Polytechnique de Sousse
