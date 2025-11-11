@@ -67,7 +67,7 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 - Application des principes de sauvegarde d'état au jeu existant
 - Préservation du nombre d'essais et du nombre mystère
 - Création d'un layout paysage spécifique pour le jeu
----
+
 ### TP5 – Widgets et Alertes - Partie 1 (21 octobre)
 - Création de RegistrationActivity avec formulaire de parcours étudiant
 - Utilisation de RadioGroup (GL, IA, IOT, DS), CheckBox (clubs) et ScrollView
@@ -124,7 +124,7 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 ---
 
 ## 🗂️ Version
-Dernière mise à jour le *28 octobre 2025*
+Dernière mise à jour le *11 novembre 2025*
 
 ---
 
