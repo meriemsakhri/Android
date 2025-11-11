@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TP3">
         <activity
+            android:name=".DefaultListviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
         <activity
@@ -28,7 +31,7 @@
             android:name=".LiveCycleActivity"
             android:exported="false" />
         <activity
-            android:name=".DefaultListviewActivity"
+            android:name=".ListViewPersonnaliseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
