@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".ListelntentActivity">
+    tools:context=".IntentImpliciteActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,51 +13,68 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/Txt_titre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="32dp"
-            android:text="Activité principale"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="Intent Implicite"
             android:textColor="#101010"
-            android:textSize="36sp"
+            android:textSize="28sp"
             android:textStyle="bold" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_intent_explicite"
+            android:id="@+id/btn_visiter_site"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Intent Explicite"
+            android:text="Visiter le site web"
+            app:icon="@drawable/ic_web"
+            app:iconGravity="textStart"
+            app:iconSize="24dp" />
+
+        <EditText
+            android:id="@+id/et_numero_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="N° de GSM"
+            android:inputType="phone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_composer_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Composer le N°"
+            app:icon="@drawable/ic_phone"
             app:iconGravity="textStart"
             app:iconSize="24dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_calculatrice"
+            android:id="@+id/btn_afficher_repertoire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Calculatrice"
-            app:icon="@drawable/ic_calculator"
+            android:text="Afficher mon répertoire"
             app:iconGravity="textStart"
             app:iconSize="24dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_intent_implicite"
+            android:id="@+id/btn_choisir_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Intent Implicite"
+            android:layout_marginBottom="32dp"
+            android:text="Choisir un contact"
             app:iconGravity="textStart"
             app:iconSize="24dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_fermer"
+            android:id="@+id/btn_retour_principal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Fermer"
+            android:text="Retour"
+            android:textColorLink="#673AB7"
             app:backgroundTint="#494444"
             app:iconGravity="textStart"
             app:iconSize="24dp" />

@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Fermer"
+        app:backgroundTint="#494444"
         app:iconGravity="textStart"
         app:iconSize="24dp" />
 

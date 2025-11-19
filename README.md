@@ -115,6 +115,20 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 - ✅ Intégration d'images dans les listes
 - ✅ Interactions utilisateur avec les éléments de liste
 
+### TP7 – Les Intents Android (11 Novembre 2025)
+
+**Objectif** : Maîtriser les Intents implicites et explicites
+
+**Fonctionnalités** :
+- ✅ **Activité Principale** avec navigation vers 4 fonctionnalités
+- ✅ **Intents Explicites** : Navigation `ListIntentActivity → IntentSimpleRetourActivity`
+- ✅ **Calculatrice** : Passage de données avec `putExtra()` et retour de résultat
+- ✅ **Intents Implicites** : Site web, téléphone et contacts 
+
+**Concepts maîtrisés** :
+- Navigation explicite entre activités
+- Transfert de données via Bundle/Extras
+
 ---
 
 ## 👨‍💻 Auteur
@@ -124,7 +138,7 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 ---
 
 ## 🗂️ Version
-Dernière mise à jour le *11 novembre 2025*
+Dernière mise à jour le *18 novembre 2025*
 
 ---
 

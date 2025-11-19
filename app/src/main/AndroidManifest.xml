@@ -13,9 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TP3">
         <activity
+            android:name=".IntentImpliciteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalculerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalculatriceActivity"
+            android:exported="false" />
+        <activity
             android:name=".IntentSimpleRetourActivity"
             android:exported="false" />
-
         <activity
             android:name=".ListViewPersonnaliseActivity"
             android:exported="false" />
@@ -49,6 +57,7 @@
         <activity
             android:name=".AboutActivity"
             android:exported="false" />
+
     </application>
 
 </manifest>
