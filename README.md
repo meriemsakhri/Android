@@ -115,7 +115,7 @@ Chaque TP introduit un nouveau concept Android (layouts, activités, cycle de vi
 - ✅ Intégration d'images dans les listes
 - ✅ Interactions utilisateur avec les éléments de liste
 
-### TP7 – Les Intents Android (11 Novembre 2025)
+### TP7 – Les Intents Android (18 Novembre 2025)
 
 **Objectif** : Maîtriser les Intents implicites et explicites
 
